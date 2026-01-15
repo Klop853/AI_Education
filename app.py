@@ -23,7 +23,7 @@ if not api_key:
 # Inicializamos el modelo (Llama 3 70B es rápido y potente)
 llm = ChatGroq(
     groq_api_key=api_key, 
-    model_name="llama3-70b-8192", 
+    model_name="llama-3.3-70b-versatile", 
     temperature=0.3
 )
 
@@ -47,4 +47,5 @@ if st.button("Consultar al Tutor"):
             st.success("Respuesta del Tutor:")
             st.write(response.content)
     else:
+
         st.warning("Por favor, escribe algo antes de enviar.")
