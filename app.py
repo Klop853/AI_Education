@@ -180,7 +180,8 @@ st.sidebar.markdown(f"{'🟢' if st.session_state.step == 3 else '⚪'} 3. Vered
 # FASE 1: CHAT CON EL TUTOR
 if st.session_state.step == 1:
     st.header("Fase 1: Examen en curso")
-    st.info("Puedes usar este chat para resolver dudas conceptuales. La IA no te dará código.")
+    st.info("Puedes usar este chat para resolver dudas conceptuales. La IA no te dará código, pero te guiará hasta que entiendas aquello en lo que dudas. " \
+    "Debes entender todo aquello que implementes, pues se te preguntará posteriormente y tendrá peso en tu nota final. Adelante.")
     
     # Mostrar historial
     for msg in st.session_state.chat_history:
